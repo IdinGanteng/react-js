@@ -1,0 +1,49 @@
+.myBG {
+    height: 100vh;
+    background: url("../asset/image/BG/index.jpeg");
+    background-size: cover;
+}
+
+.intro {
+    height: 300px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.title {
+    font-family: comic;
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1;
+    text-shadow: 2px 2px grey;
+    letter-spacing: 4px;
+}
+
+.comedy {
+    height: auto;
+    background: url("../asset/image/BG/titanic.jpeg");
+    background-size: cover;
+}
+
+.superheroes {
+    height: auto;
+    background: url("../asset/image/BG/titanic.jpeg");
+    background-size: cover;
+}
+
+
+/* .movieWrapper {
+
+} */
+
+.movieImage {
+    height: auto;
+    background-color: black;
+    margin: 5px;
+    padding: 5px;
+}
+
+.images {
+    height: 500px;
+}
