@@ -4,6 +4,7 @@ import Intro from  "./components/Intro";
 import './Style/LandingPage.css';
 import Comedy from './components/Comedy';
 import Superheroes from "./components/Superheroes";
+import About from './components/About';
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
       </div>
       <div className='superheroes'>
         <Superheroes/>
+      </div>
+      <div>
+        <About/>
       </div>
      
     </div>

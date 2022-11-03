@@ -11,7 +11,7 @@ const NavigationBar=()=>{
                     <Nav>
                        
                         <Nav.Link href="#comedy">COMEDY</Nav.Link>
-                        <Nav.Link href="#superheroes">SUPER HERO</Nav.Link>
+                        <Nav.Link href="#comedy">SUPER HERO</Nav.Link>
                     </Nav>
                 </Container>
             </Navbar>
