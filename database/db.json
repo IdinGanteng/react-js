@@ -1,0 +1,22 @@
+{
+  "user": [
+    {
+      "nama": "idin",
+      "alamat": "rt 2 rw 7 ",
+      "totalAirPerM3": "300",
+      "totalPembayaran": "45.000",
+      "phone": "085848940211",
+      "catatan": "hskjhaksd",
+      "id": 1
+    },
+    {
+      "nama": "idin",
+      "alamat": "rt 2 rw 7 ",
+      "totalAirPerM3": "300",
+      "totalPembayaran": "45.000",
+      "phone": "085848940211",
+      "catatan": "agshgd",
+      "id": 2
+    }
+  ]
+}

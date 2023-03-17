@@ -1,32 +1,26 @@
 import './App.css';
-import NavigationBar from './components/NavigationBar';
-import Intro from  "./components/Intro";
-import './Style/LandingPage.css';
-import Comedy from './components/Comedy';
-import Superheroes from "./components/Superheroes";
-import About from './components/About';
+import AddUser from './Compnents/AddUser';
+import AllUsers from './Compnents/AllUser';
+import EditUser from './Compnents/EditUser';
+import Home from './Compnents/Home';
+import Navbar from './Compnents/Navbar';
+import NotFound from './Compnents/NotFound';
+import Profile from './Compnents/Profile';
+import { BrowserRouter as Router, Routes,Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div>
-      <div className='myBG'>
-      <NavigationBar/>
-      <Intro/>
-      </div>
-      <div className='comedy'>
-        <Comedy/>
-      </div>
-      <div className='superheroes'>
-        <Superheroes/>
-      </div>
-      <div>
-        <About/>
-      </div>
-     
-    </div>
-   
-    
-    
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/profile/:id' element={<Profile/>}/>
+        <Route path='/all' element={<AllUsers/>}/>
+        <Route path='/add' element={<AddUser/>}/>
+        <Route path='/edit/:id' element={<EditUser/>}/>
+        {/* <Route element={<NotFound/>}/> */}
+      </Routes>
+    </Router>
   );
 }
 
