@@ -1,4 +1,7 @@
-{
+{ 
+  "headers":{
+    "Acces-Control-Allow-Origin":"*"
+  },
   "user": [
     {
       "nama": "idin",
@@ -17,6 +20,15 @@
       "phone": "085848940211",
       "catatan": "agshgd",
       "id": 2
+    },
+    {
+      "nama": "bao",
+      "alamat": "kauman",
+      "totalAirPerM3": "300",
+      "totalPembayaran": "45.000",
+      "phone": "085848940211",
+      "catatan": "lunas",
+      "id": 3
     }
   ]
 }
