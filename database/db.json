@@ -1,4 +1,7 @@
 { 
+  "headers":{
+    "Acces-Control-Allow-Origin":"*"
+  },
   "user": [
     {
       "nama": "idin",
