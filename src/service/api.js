@@ -16,9 +16,9 @@ import axios from 'axios';
 // const PORT = process.env.PORT || 500;
 // app.listen(PORT, () =>console.log('server siap'));
 
-const url = "https://127.0.0.1:3003/user";
+const url = "http://127.0.0.1:3003/user";
 
-export const getallUsers = async (id) => {
+export const getallUsers = async (id,res) => {
     id = id || '';
     return await axios.get(`${url}/${id}`);
 }
