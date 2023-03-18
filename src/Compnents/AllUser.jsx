@@ -24,6 +24,7 @@ const AllUsers = () => {
         const response = await getallUsers();
         console.log(response);
         setUser(response.data);
+        
         // setName(response.data);
         // setUsername(response.data);
         // setEmail(response.data);

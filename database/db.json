@@ -1,9 +1,4 @@
 {
-  "headers": {
-    "Access-Control-Allow-Headers": "Content-Type",
-    "Acces-Control-Allow-Origin": "https://payment-admin-pdam.vercel.app",
-    "Access-Control-Allow-Methods": "get, post, put, delete"
-  },
   "user": [
     {
       "nama": "idin",
@@ -11,7 +6,7 @@
       "totalAirPerM3": "300",
       "totalPembayaran": "45.000",
       "phone": "085848940211",
-      "catatan": "agshgd",
+      "catatan": "jancok",
       "id": 2
     },
     {
@@ -22,6 +17,24 @@
       "phone": "085848940211",
       "catatan": "ajsdhgjd",
       "id": 3
+    },
+    {
+      "nama": "bao",
+      "alamat": "sijambu",
+      "totalAirPerM3": "300",
+      "totalPembayaran": "45.000",
+      "phone": "085848940211",
+      "catatan": "shjdhf",
+      "id": 4
+    },
+    {
+      "nama": "ueyu",
+      "alamat": "rt 2 rw 7 ",
+      "totalAirPerM3": "300",
+      "totalPembayaran": "45.000",
+      "phone": "085848940211",
+      "catatan": "kjsfd",
+      "id": 5
     }
   ]
 }

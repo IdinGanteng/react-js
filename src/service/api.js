@@ -1,7 +1,22 @@
 import axios from 'axios';
 
 
-const url = "http://127.0.0.1:3003/user";
+// const express = require('express');
+// const cors = require('cors');
+// const jsonServer = require('json-server');
+
+// const app = express();
+// const server = jsonServer.create();
+// const router = jsonServer.router('db.json');
+
+// app.use(cors());
+// app.use('/api',router);
+// server.use('/api',router);
+
+// const PORT = process.env.PORT || 500;
+// app.listen(PORT, () =>console.log('server siap'));
+
+const url = "https://127.0.0.1:3003/user";
 
 export const getallUsers = async (id) => {
     id = id || '';
