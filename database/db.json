@@ -1,17 +1,10 @@
-{ 
-  "headers":{
-    "Acces-Control-Allow-Origin":"*"
+{
+  "headers": {
+    "Access-Control-Allow-Headers": "Content-Type",
+    "Acces-Control-Allow-Origin": "https://payment-admin-pdam.vercel.app",
+    "Access-Control-Allow-Methods": "get, post, put, delete"
   },
   "user": [
-    {
-      "nama": "idin",
-      "alamat": "rt 2 rw 7 ",
-      "totalAirPerM3": "300",
-      "totalPembayaran": "45.000",
-      "phone": "085848940211",
-      "catatan": "hskjhaksd",
-      "id": 1
-    },
     {
       "nama": "idin",
       "alamat": "rt 2 rw 7 ",
@@ -22,12 +15,12 @@
       "id": 2
     },
     {
-      "nama": "bao",
-      "alamat": "kauman",
+      "nama": "ueyu",
+      "alamat": "rt 2 rw 7 ",
       "totalAirPerM3": "300",
       "totalPembayaran": "45.000",
       "phone": "085848940211",
-      "catatan": "lunas",
+      "catatan": "ajsdhgjd",
       "id": 3
     }
   ]

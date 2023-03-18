@@ -1,6 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState} from 'react';
 import { deleteUser ,getallUsers } from '../service/api';
+import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import { Button } from 'antd';
 import './style.css';
 
 
@@ -15,8 +17,9 @@ const AllUsers = () => {
     // const [bio, setBio] = useState([]);
     useEffect(() => {
         getUsers();
-    }, [])
+    }, []);
 
+    
     const getUsers = async () =>{
         const response = await getallUsers();
         console.log(response);
@@ -32,7 +35,7 @@ const AllUsers = () => {
         await deleteUser(id);
         getUsers();
     }
-
+    const navigate = useNavigate();
     return (
         <div className='responsive-table'>
         {/* <Table className={classes.table}>
@@ -83,9 +86,9 @@ const AllUsers = () => {
                         <td>{data.totalAirPerM3}</td>
                         <td>{data.totalPembayaran}</td>
                         <td>
-                            <button variant="contained" color="primary" style={{margin: '0px 20px'}} component={Link} to={`/edit/${data.id}`}>Edit</button>
-                            <button variant="contained" color="secondary" style={{margin: '0px 20px'}} onClick={() => deleteData(data.id)}>Delete</button>
-                            <button variant="contained" color="primary" style={{margin: '0px 20px'}} component={Link} to={`/profile/${data.id}`}>Profile</button>
+                            <Button onClick={()=>navigate(`/edit/${data.id}`)}>Edit</Button>
+                            <Button variant="contained" color="secondary" style={{margin: '0px 20px'}} onClick={() => deleteData(data.id)}>Delete</Button>
+                            <Button onClick={()=>navigate(`/profile/${data.id}`)}>Profile</Button>
                         </td>
                     </tr>
                 ))
