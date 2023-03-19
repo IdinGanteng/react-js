@@ -16,7 +16,7 @@ import axios from 'axios';
 // const PORT = process.env.PORT || 500;
 // app.listen(PORT, () =>console.log('server siap'));
 
-const url = "http://127.0.0.1:3003/user";
+const url = "https://real-blue-blackbuck-garb.cyclic.app/user";
 
 export const getallUsers = async (id) => {
     id = id || '';

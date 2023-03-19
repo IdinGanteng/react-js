@@ -24,7 +24,6 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "server-pdam": "json-server --watch database/db.json --host 127.0.0.1 --port 3003",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
