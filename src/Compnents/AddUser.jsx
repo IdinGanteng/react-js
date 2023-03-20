@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 // import { Container, Typography, FormControl, InputLabel, Input, Box, FormGroup, Button } from '@material-ui/core';
 import { addUser } from '../service/api';
 import { Button, Form, Input, message, Upload } from 'antd';
-import { useHistory, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 
 const initialValue = {
@@ -37,10 +37,10 @@ const AddUser = () => {
   }
   const addUserDetails = async () => {
     await addUser(user);
-    pesanWAotomatis();
+    // pesanWAotomatis();
     console.log(user);
     // history.push('/all');
-    navigate("/all");
+    navigate('/all');
   }
 
 
@@ -95,7 +95,7 @@ const AddUser = () => {
             span: 16,
           }}
         >
-          <Button type="primary" onClick={() => addUserDetails()} >
+          <Button type="primary" onClick={() => addUserDetails(pesanWAotomatis())} >
             Bayar sekarang
           </Button>
           {/* <Button type="primary" onClick={()=> pesanWAotomatis()}>
